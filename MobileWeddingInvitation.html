@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Krishna weds Sowbarnika | Tamil Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+Tamil:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --maroon: #3a0708;
+      --maroon-2: #641708;
+      --deep: #130102;
+      --gold: #d4a247;
+      --gold-2: #ffd56d;
+      --ivory: #fff1cf;
+      --cream: #f8dfaa;
+      --bronze: #8a5517;
+      --leaf: #315d22;
+      --ink: #4b1307;
+      --door-open: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--deep);
+    }
+
+    body {
+      overflow-x: hidden;
+      color: var(--ivory);
+      background:
+        radial-gradient(circle at 50% -10%, rgba(255, 218, 126, 0.26), transparent 34rem),
+        linear-gradient(180deg, #170102 0%, #4d1008 40%, #f0c06f 100%);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      text-rendering: optimizeLegibility;
+    }
+
+    img, iframe {
+      display: block;
+      max-width: 100%;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.18;
+      background-image:
+        radial-gradient(circle at 18px 18px, rgba(255, 213, 109, 0.22) 1px, transparent 2px),
+        linear-gradient(45deg, transparent 46%, rgba(255, 213, 109, 0.08) 48%, transparent 52%);
+      background-size: 42px 42px, 72px 72px;
+      mix-blend-mode: soft-light;
+    }
+
+    .page {
+      position: relative;
+      z-index: 2;
+    }
+
+    section {
+      position: relative;
+      padding: 4.5rem 1.1rem;
+    }
+
+    .intro {
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: max(2rem, env(safe-area-inset-top));
+      background:
+        radial-gradient(circle at 50% 24%, rgba(255, 213, 109, 0.18), transparent 19rem),
+        linear-gradient(180deg, #1c0203 0%, #5d1609 52%, #f2c374 100%);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .intro-card {
+      position: relative;
+      width: min(100%, 27rem);
+      padding: 1.35rem 1rem 1.6rem;
+      border: 1px solid rgba(255, 213, 109, 0.42);
+      border-radius: 1.25rem;
+      background:
+        linear-gradient(135deg, rgba(255, 241, 207, 0.13), transparent 38%),
+        linear-gradient(180deg, rgba(64, 7, 7, 0.72), rgba(35, 3, 3, 0.82));
+      box-shadow: 0 1.8rem 5rem rgba(0, 0, 0, 0.42), inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+      overflow: hidden;
+    }
+
+    .intro-card::before {
+      content: "";
+      position: absolute;
+      inset: 0.65rem;
+      border: 1px solid rgba(255, 213, 109, 0.18);
+      border-radius: 0.95rem;
+      pointer-events: none;
+    }
+
+    .mandala-row {
+      display: grid;
+      grid-template-columns: 4.7rem 1fr 4.7rem;
+      gap: 0.35rem;
+      align-items: center;
+      margin-bottom: 1.05rem;
+    }
+
+    .mandala {
+      width: 4.7rem;
+      aspect-ratio: 1;
+      object-fit: contain;
+      filter: drop-shadow(0 0.6rem 1.1rem rgba(0, 0, 0, 0.32));
+      opacity: 0.95;
+      animation: slow-spin 42s linear infinite;
+    }
+
+    .mandala:nth-child(3) {
+      animation-direction: reverse;
+    }
+
+    @keyframes slow-spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .kicker {
+      color: var(--gold-2);
+      font-family: "Cinzel", serif;
+      font-size: 0.58rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+    }
+
+    .names {
+      color: var(--ivory);
+      font-family: "Cinzel", serif;
+      font-size: clamp(2.45rem, 13vw, 4.4rem);
+      line-height: 0.96;
+      text-shadow: 0 0 1.5rem rgba(255, 213, 109, 0.2);
+    }
+
+    .names span {
+      display: block;
+      animation: float-name 5.6s ease-in-out infinite;
+    }
+
+    .names span:last-child {
+      animation-delay: -1.3s;
+    }
+
+    @keyframes float-name {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-0.32rem); }
+    }
+
+    .weds {
+      display: block;
+      margin: 0.52rem auto;
+      color: var(--gold-2);
+      font-family: "Cinzel", serif;
+      font-size: 0.76rem;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      transform: translateX(0.18em);
+    }
+
+    .tamil {
+      margin-top: 1rem;
+      color: #ffe3a1;
+      font-family: "Noto Serif Tamil", serif;
+      font-size: 0.96rem;
+      line-height: 1.6;
+    }
+
+    .date-pill {
+      display: inline-flex;
+      margin-top: 1.2rem;
+      padding: 0.72rem 1rem;
+      border: 1px solid rgba(255, 213, 109, 0.34);
+      border-radius: 999px;
+      color: var(--gold-2);
+      font-family: "Cinzel", serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      background: rgba(255, 213, 109, 0.08);
+    }
+
+    .scroll-cue {
+      position: absolute;
+      left: 50%;
+      bottom: calc(1.45rem + env(safe-area-inset-bottom));
+      transform: translateX(-50%);
+      color: rgba(255, 241, 207, 0.78);
+      font-family: "Cinzel", serif;
+      font-size: 0.58rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      animation: bounce 1.9s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, 0.55rem); }
+    }
+
+    .door-stage {
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 0.7rem;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(255, 213, 109, 0.18), transparent 20rem),
+        linear-gradient(180deg, #5d1609 0%, #8f2b10 46%, #f0c06f 100%);
+    }
+
+    .door-frame {
+      position: relative;
+      width: min(100%, 31rem);
+      height: min(96svh, 44rem);
+      overflow: hidden;
+      border: 0.55rem solid #5d1609;
+      border-radius: 0.9rem;
+      box-shadow: 0 1.8rem 5.5rem rgba(45, 8, 2, 0.55);
+      background: #2a0404;
+      perspective: 1600px;
+    }
+
+    .door-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center bottom;
+      filter: saturate(1.04) contrast(1.02);
+    }
+
+    .door-shade {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255, 241, 207, 0.02), transparent 48%, rgba(75, 19, 7, 0.14));
+      pointer-events: none;
+    }
+
+    .door-panels {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      transform-style: preserve-3d;
+      pointer-events: none;
+      opacity: calc(1 - (var(--door-open) * 0.93));
+    }
+
+    .door {
+      position: relative;
+      overflow: hidden;
+      border: 4px solid rgba(255, 213, 109, 0.5);
+      background:
+        radial-gradient(circle at 50% 20%, rgba(255, 213, 109, 0.34), transparent 12%),
+        radial-gradient(circle at 50% 78%, rgba(255, 213, 109, 0.22), transparent 16%),
+        repeating-linear-gradient(90deg, rgba(255, 213, 109, 0.16) 0 1px, transparent 1px 26px),
+        repeating-linear-gradient(0deg, rgba(255, 213, 109, 0.08) 0 1px, transparent 1px 42px),
+        linear-gradient(180deg, #8b230d, #4d0b06 48%, #210202);
+      box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.36), inset 0 0 0 0.65rem rgba(255, 213, 109, 0.08);
+    }
+
+    .door::before {
+      content: "";
+      position: absolute;
+      inset: 7%;
+      border: 2px solid rgba(255, 213, 109, 0.38);
+      background:
+        radial-gradient(circle, rgba(255, 213, 109, 0.48) 0 2px, transparent 3px),
+        linear-gradient(90deg, transparent 48%, rgba(255, 213, 109, 0.26) 49%, rgba(255, 213, 109, 0.26) 51%, transparent 52%);
+      background-size: 25px 25px, auto;
+      clip-path: polygon(50% 0, 64% 12%, 78% 12%, 91% 28%, 91% 100%, 9% 100%, 9% 28%, 22% 12%, 36% 12%);
+    }
+
+    .door::after {
+      content: "";
+      position: absolute;
+      inset: 1.05rem;
+      border: 1px solid rgba(255, 241, 207, 0.2);
+      background: radial-gradient(circle at 50% 50%, rgba(255, 213, 109, 0.52) 0 7px, rgba(75, 19, 7, 0.42) 8px 11px, transparent 12px);
+    }
+
+    .door-left {
+      transform-origin: left center;
+      transform: translateX(calc(var(--door-open) * -5%)) rotateY(calc(var(--door-open) * -116deg));
+    }
+
+    .door-right {
+      transform-origin: right center;
+      transform: translateX(calc(var(--door-open) * 5%)) rotateY(calc(var(--door-open) * 116deg));
+    }
+
+    .door-note {
+      position: absolute;
+      left: 50%;
+      bottom: 1rem;
+      z-index: 4;
+      transform: translateX(-50%);
+      padding: 0.65rem 0.9rem;
+      border: 1px solid rgba(255, 213, 109, 0.3);
+      border-radius: 999px;
+      background: rgba(32, 2, 2, 0.58);
+      color: rgba(255, 241, 207, 0.8);
+      font-family: "Cinzel", serif;
+      font-size: 0.54rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      opacity: calc(1 - var(--door-open));
+      pointer-events: none;
+    }
+
+    .section-shell {
+      background:
+        radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.62), transparent 18rem),
+        linear-gradient(180deg, #fff1cf 0%, #f8dfa8 58%, #e8b85e 100%);
+      color: var(--ink);
+    }
+
+    .frame {
+      position: relative;
+      overflow: hidden;
+      width: min(100%, 35rem);
+      margin-inline: auto;
+      border: 1px solid rgba(145, 99, 35, 0.5);
+      border-radius: 1rem;
+      background:
+        linear-gradient(135deg, rgba(116, 30, 10, 0.12), transparent 20%, transparent 80%, rgba(215, 163, 49, 0.18)),
+        linear-gradient(180deg, #fff0c8, #f5d694);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.34), 0 1.4rem 4rem rgba(91, 38, 9, 0.18);
+    }
+
+    .frame::before {
+      content: "";
+      position: absolute;
+      inset: 0.65rem;
+      border: 1px solid rgba(109, 38, 10, 0.22);
+      border-radius: 0.75rem;
+      pointer-events: none;
+    }
+
+    .toran {
+      position: absolute;
+      left: 50%;
+      top: -1.1rem;
+      z-index: 4;
+      width: 108%;
+      height: 5.6rem;
+      transform: translateX(-50%);
+      object-fit: cover;
+      object-position: center bottom;
+      pointer-events: none;
+      filter: drop-shadow(0 0.8rem 0.9rem rgba(91, 38, 9, 0.14));
+    }
+
+    .invite {
+      padding-block: 4.2rem;
+    }
+
+    .invite-inner {
+      position: relative;
+      z-index: 2;
+      padding: 5.2rem 1.25rem 1.65rem;
+      text-align: center;
+    }
+
+    .lamp {
+      width: 8.3rem;
+      height: 10rem;
+      margin: 0 auto 1rem;
+      object-fit: contain;
+      object-position: center bottom;
+      filter: drop-shadow(0 1.1rem 1.1rem rgba(91, 38, 9, 0.22));
+    }
+
+    .eyebrow {
+      color: var(--bronze);
+      font-family: "Cinzel", serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+    }
+
+    .title {
+      margin-top: 0.7rem;
+      color: var(--ink);
+      font-family: "Cinzel", serif;
+      font-size: clamp(2.2rem, 11vw, 4.2rem);
+      line-height: 1.04;
+    }
+
+    .copy {
+      margin: 1rem auto 0;
+      max-width: 29rem;
+      color: #5b2a11;
+      font-size: 1.02rem;
+      line-height: 1.85;
+    }
+
+    .events {
+      padding-top: 3.8rem;
+    }
+
+    .event-grid {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.7rem;
+    }
+
+    .event-card {
+      position: relative;
+      overflow: hidden;
+      padding: 1.3rem;
+      border: 1px solid rgba(145, 99, 35, 0.36);
+      border-radius: 0.95rem;
+      background: linear-gradient(180deg, rgba(255, 244, 213, 0.92), rgba(245, 214, 148, 0.88));
+      box-shadow: 0 1rem 2.6rem rgba(91, 38, 9, 0.12);
+      transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s;
+    }
+
+    .event-card:hover {
+      transform: translateY(-0.7rem) scale(1.015);
+      box-shadow: 0 1.5rem 3.5rem rgba(91, 38, 9, 0.22);
+    }
+
+    .event-card h3 {
+      margin-top: 0.55rem;
+      color: var(--ink);
+      font-family: "Cinzel", serif;
+      font-size: 1.75rem;
+      line-height: 1.1;
+    }
+
+    .event-card p {
+      margin-top: 0.9rem;
+      color: #5b2a11;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .time-pill {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.55rem 0.75rem;
+      border: 1px solid rgba(145, 99, 35, 0.34);
+      color: #7b2b10;
+      font-family: "Cinzel", serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .gallery {
+      padding-block: 3.8rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      gap: 1rem;
+      width: min(100%, 36rem);
+      margin-inline: auto;
+    }
+
+    .photo-card {
+      position: relative;
+      min-height: 22rem;
+      overflow: hidden;
+      border: 0.55rem solid rgba(255, 241, 207, 0.64);
+      border-radius: 1rem;
+      background: #f5d694;
+      box-shadow: 0 1.2rem 3.3rem rgba(91, 38, 9, 0.2);
+      transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .photo-card:nth-child(even) {
+      min-height: 18rem;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-0.65rem) scale(1.015);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      min-height: inherit;
+      object-fit: cover;
+      transition: transform 1s ease;
+    }
+
+    .photo-card:hover img {
+      transform: scale(1.06);
+    }
+
+    .photo-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255, 241, 207, 0.04), transparent 50%, rgba(75, 19, 7, 0.12));
+      pointer-events: none;
+    }
+
+    .venue {
+      padding-block: 3.8rem;
+    }
+
+    .venue .frame {
+      padding: 1.3rem;
+    }
+
+    .venue-details {
+      position: relative;
+      z-index: 2;
+      padding-top: 3.8rem;
+      text-align: center;
+    }
+
+    .detail-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+
+    .detail {
+      padding: 0.9rem;
+      border: 1px solid rgba(145, 99, 35, 0.34);
+      color: #5b2a11;
+      background: rgba(255, 241, 207, 0.42);
+    }
+
+    .detail strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      color: #7b2b10;
+      font-family: "Cinzel", serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+    }
+
+    .map {
+      position: relative;
+      z-index: 2;
+      height: 21rem;
+      margin-top: 1rem;
+      overflow: hidden;
+      border: 1px solid rgba(145, 99, 35, 0.34);
+      border-radius: 0.8rem;
+      background: #210303;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      filter: sepia(0.18) saturate(0.9) contrast(1.03);
+    }
+
+    .countdown {
+      text-align: center;
+      padding-block: 3.8rem;
+    }
+
+    .timer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.8rem;
+      margin: 1.55rem auto 0;
+      width: min(100%, 26rem);
+    }
+
+    .time {
+      padding: 1.15rem 0.55rem;
+      border: 1px solid rgba(145, 99, 35, 0.36);
+      border-radius: 0.9rem;
+      background: linear-gradient(180deg, rgba(255, 244, 213, 0.92), rgba(245, 214, 148, 0.9));
+      box-shadow: 0 1rem 2.4rem rgba(91, 38, 9, 0.14);
+    }
+
+    .time span {
+      display: block;
+      color: var(--ink);
+      font-family: "Cinzel", serif;
+      font-size: 2.6rem;
+      line-height: 1;
+    }
+
+    .time small {
+      display: block;
+      margin-top: 0.45rem;
+      color: #7b2b10;
+      font-family: "Cinzel", serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+    }
+
+    .finale {
+      min-height: 82svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background:
+        radial-gradient(circle at 50% 45%, rgba(255, 213, 109, 0.14), transparent 18rem),
+        linear-gradient(180deg, #4d1008 0%, #120102 100%);
+    }
+
+    .finale-inner {
+      width: min(100%, 33rem);
+    }
+
+    .finale .lamp {
+      width: 9rem;
+      height: 9rem;
+    }
+
+    .finale h2 {
+      color: var(--ivory);
+      font-family: "Cinzel", serif;
+      font-size: clamp(2.4rem, 12vw, 4.2rem);
+      line-height: 1.07;
+    }
+
+    .finale p {
+      margin: 1.2rem auto 0;
+      max-width: 28rem;
+      color: rgba(255, 241, 207, 0.88);
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+    .cta {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 3.25rem;
+      border: 1px solid rgba(255, 213, 109, 0.36);
+      border-radius: 999px;
+      color: var(--ivory);
+      background: rgba(255, 213, 109, 0.1);
+      font-family: "Cinzel", serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.24em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: transform 0.45s, background-color 0.45s, color 0.45s;
+    }
+
+    .btn:hover {
+      transform: translateY(-0.3rem);
+      background: var(--gold-2);
+      color: #2a0404;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(3rem);
+      transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .parallax {
+      transform: translate3d(0, var(--parallax-y, 0px), 0);
+      will-change: transform;
+    }
+
+    .petals {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .petal {
+      position: absolute;
+      top: -2rem;
+      width: var(--petal-size, 0.72rem);
+      height: var(--petal-size, 0.72rem);
+      opacity: var(--petal-opacity, 0.62);
+      border-radius: 50%;
+      background: transparent;
+      filter: drop-shadow(0 0 0.45rem rgba(255, 213, 109, 0.26));
+      animation: fall linear infinite;
+      animation-duration: var(--petal-duration, 14s);
+      animation-delay: var(--petal-delay, 0s);
+    }
+
+    .petal i {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 38%;
+      height: 66%;
+      border-radius: 50% 50% 46% 46%;
+      background: linear-gradient(180deg, #fff8da 0%, #ffd56d 42%, #d79b29 100%);
+      transform-origin: 50% 88%;
+      box-shadow: inset 0 0 0.18rem rgba(255, 255, 255, 0.46);
+    }
+
+    .petal i:nth-child(1) { transform: translate(-50%, -88%) rotate(0deg); }
+    .petal i:nth-child(2) { transform: translate(-50%, -88%) rotate(60deg); }
+    .petal i:nth-child(3) { transform: translate(-50%, -88%) rotate(120deg); }
+    .petal i:nth-child(4) { transform: translate(-50%, -88%) rotate(180deg); }
+    .petal i:nth-child(5) { transform: translate(-50%, -88%) rotate(240deg); }
+    .petal i:nth-child(6) { transform: translate(-50%, -88%) rotate(300deg); }
+
+    .petal b {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 2;
+      width: 32%;
+      height: 32%;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, #fff2ae 0 18%, #9b5f12 20% 100%);
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 0 0.06rem rgba(255, 241, 207, 0.5);
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translate3d(0, -8svh, 0) rotate(var(--petal-rotate, 0deg));
+        opacity: 0;
+      }
+      10% {
+        opacity: var(--petal-opacity, 0.55);
+      }
+      55% {
+        transform: translate3d(var(--petal-drift-mid, 1.5rem), 56svh, 0) rotate(calc(var(--petal-rotate, 0deg) + 180deg));
+      }
+      100% {
+        transform: translate3d(var(--petal-drift, -1rem), 116svh, 0) rotate(calc(var(--petal-rotate, 0deg) + 420deg));
+        opacity: 0;
+      }
+    }
+
+    @media (min-width: 720px) {
+      .intro-card {
+        width: min(100%, 42rem);
+        padding: 2rem;
+      }
+
+      .mandala-row {
+        grid-template-columns: 8rem 1fr 8rem;
+      }
+
+      .mandala {
+        width: 8rem;
+      }
+
+      .event-grid,
+      .detail-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      .photo-card:nth-child(1) { grid-column: span 4; }
+      .photo-card:nth-child(2) { grid-column: span 2; }
+      .photo-card:nth-child(3) { grid-column: span 3; }
+      .photo-card:nth-child(4) { grid-column: span 3; }
+      .photo-card:nth-child(5) { grid-column: span 2; }
+      .photo-card:nth-child(6) { grid-column: span 4; }
+
+      .timer {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .cta {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 1ms !important;
+        transition-duration: 1ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    .gate {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      background:
+        radial-gradient(circle at 50% 24%, rgba(255, 213, 109, 0.18), transparent 19rem),
+        linear-gradient(180deg, #1c0203 0%, #5d1609 52%, #f2c374 100%);
+    }
+
+    .gate-card {
+      width: min(100%, 25rem);
+      padding: 2rem 1.4rem 1.8rem;
+      text-align: center;
+      border: 1px solid rgba(255, 213, 109, 0.42);
+      border-radius: 1.25rem;
+      background:
+        linear-gradient(135deg, rgba(255, 241, 207, 0.13), transparent 38%),
+        linear-gradient(180deg, rgba(64, 7, 7, 0.72), rgba(35, 3, 3, 0.82));
+      box-shadow: 0 1.8rem 5rem rgba(0, 0, 0, 0.42), inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+    }
+
+    .gate-card .kicker {
+      display: block;
+      margin-bottom: 0.6rem;
+    }
+
+    .gate-card h2 {
+      color: var(--ivory);
+      font-family: "Cinzel", serif;
+      font-size: clamp(1.5rem, 8vw, 2rem);
+      line-height: 1.15;
+    }
+
+    .gate-card p {
+      margin-top: 0.7rem;
+      color: rgba(255, 241, 207, 0.82);
+      font-size: 0.98rem;
+      line-height: 1.6;
+    }
+
+    .gate-form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1.4rem;
+    }
+
+    .gate-input {
+      width: 100%;
+      min-height: 3rem;
+      padding: 0.6rem 1rem;
+      border: 1px solid rgba(255, 213, 109, 0.4);
+      border-radius: 999px;
+      background: rgba(255, 241, 207, 0.08);
+      color: var(--ivory);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.1rem;
+      text-align: center;
+      letter-spacing: 0.08em;
+    }
+
+    .gate-input::placeholder {
+      color: rgba(255, 241, 207, 0.45);
+    }
+
+    .gate-input:focus {
+      outline: none;
+      border-color: var(--gold-2);
+    }
+
+    .gate-error {
+      min-height: 1.1rem;
+      color: #ffb4a8;
+      font-size: 0.82rem;
+      letter-spacing: 0.03em;
+    }
+  </style>
+</head>
+<body>
+  <div class="gate" id="passwordGate">
+    <div class="gate-card">
+      <span class="kicker">A royal Tamil Hindu wedding</span>
+      <h2>Krishna &amp; Sowbarnika</h2>
+      <p>This invitation is just for our close family and friends. Enter the password to continue.</p>
+      <form class="gate-form" id="gateForm" autocomplete="off">
+        <input class="gate-input" id="gateInput" type="password" inputmode="text" placeholder="Password" autofocus />
+        <p class="gate-error" id="gateError"></p>
+        <button type="submit" class="btn" style="width:100%;">Open Invitation</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="siteContent" style="display:none;">
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <main class="page">
+    <section class="intro">
+      <div class="intro-card reveal">
+        <div class="mandala-row">
+          <img class="mandala" src="public/Mandela/ChatGPT%20Image%20May%2010%2C%202026%2C%2008_47_14%20PM.png" alt="">
+          <p class="kicker">A royal Tamil Hindu wedding</p>
+          <img class="mandala" src="public/Mandela/ChatGPT%20Image%20May%2010%2C%202026%2C%2008_47_14%20PM.png" alt="">
+        </div>
+        <h1 class="names">
+          <span>Krishna</span>
+          <em class="weds">weds</em>
+          <span>Sowbarnika</span>
+        </h1>
+        <p class="tamil">&#2980;&#3007;&#2992;&#3009;&#2990;&#2979; &#2997;&#3007;&#2996;&#3006; &#2949;&#2996;&#3016;&#2986;&#3021;&#2986;&#3007;&#2980;&#2996;&#3021;</p>
+        <p class="date-pill">13 September 2026</p>
+      </div>
+      <div class="scroll-cue">Scroll to open</div>
+    </section>
+
+    <section class="door-stage" id="doorStage">
+      <div class="door-frame">
+        <img class="door-image" src="public/tamil-traditional-background.png" alt="Tamil wedding mandapam with bride and groom">
+        <div class="door-shade"></div>
+        <div class="door-panels" aria-hidden="true">
+          <div class="door door-left"></div>
+          <div class="door door-right"></div>
+        </div>
+        <div class="door-note">Keep scrolling</div>
+      </div>
+    </section>
+
+    <section class="section-shell invite">
+      <div class="frame reveal parallax" data-speed="0.07">
+        <img class="toran" src="public/—Pngtree—traditional indian mango leaf marigold_23775540.png" alt="">
+        <div class="invite-inner">
+          <img class="lamp" src="public/—Pngtree—ornate golden peacock kuthu vilakku_23215462.png" alt="">
+          <p class="eyebrow">Invitation of honour</p>
+          <h2 class="title">A golden scroll of welcome</h2>
+          <p class="copy">With blessings from family and tradition, we request the honour of your presence at our sacred union.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell events">
+      <div class="frame reveal" style="padding:1.35rem;">
+        <p class="eyebrow">Ceremonial sequence</p>
+        <h2 class="title">Events with timeless grace</h2>
+        <div class="event-grid">
+          <article class="event-card parallax" data-speed="0.05">
+            <p class="eyebrow">Sacred vows</p>
+            <h3>Muhurtham</h3>
+            <p>The sacred dawn ceremony where mantras, blessings, and devotion come together.</p>
+            <span class="time-pill">7:00 AM</span>
+          </article>
+          <article class="event-card parallax" data-speed="0.08">
+            <p class="eyebrow">Banana leaf feast</p>
+            <h3>Traditional Feast</h3>
+            <p>A grand Tamil virundhu served with fragrance, generosity, and festive hospitality.</p>
+            <span class="time-pill">After rituals</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell gallery" aria-label="Wedding gallery">
+      <div class="gallery-grid reveal">
+        <div class="photo-card parallax" data-speed="0.04"><img src="public/GallerySection/ChatGPT%20Image%20May%2010%2C%202026%2C%2008_05_39%20PM.png" alt="Tamil wedding artwork"></div>
+        <div class="photo-card parallax" data-speed="0.07"><img src="public/GallerySection/DSC_0361%20%5Bveni%20studio%5D.JPG" alt="Wedding photograph"></div>
+        <div class="photo-card parallax" data-speed="0.05"><img src="public/GallerySection/ChatGPT%20Image%20May%2010%2C%202026%2C%2008_23_10%20PM.png" alt="Tamil wedding artwork"></div>
+        <div class="photo-card parallax" data-speed="0.09"><img src="public/GallerySection/DSC_0521%20%5Bveni%20studio%5D.JPG" alt="Wedding photograph"></div>
+        <div class="photo-card parallax" data-speed="0.06"><img src="public/GallerySection/ChatGPT%20Image%20May%2010%2C%202026%2C%2008_30_39%20PM.png" alt="Tamil wedding artwork"></div>
+        <div class="photo-card parallax" data-speed="0.04"><img src="public/GallerySection/DSC_0961%20%5Bveni%20studio%5D.JPG" alt="Wedding photograph"></div>
+      </div>
+    </section>
+
+    <section class="section-shell venue">
+      <div class="frame reveal">
+        <img class="toran" src="public/—Pngtree—traditional indian mango leaf marigold_23775540.png" alt="">
+        <div class="venue-details">
+          <p class="eyebrow">Venue</p>
+          <h2 class="title">Narasu's Shiva Vasantha Mahal</h2>
+          <p class="copy">A temple-inspired destination in Salem, Tamil Nadu.</p>
+          <div class="detail-grid">
+            <div class="detail"><strong>City</strong>Salem, Tamil Nadu</div>
+            <div class="detail"><strong>Timing</strong>Sunday | 7:00 AM onwards</div>
+          </div>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.318117161312!2d78.155632574819!3d11.671852288536645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1f50420ffff%3A0x9cd8bb2d2e2b6730!2sNarasu%27s%20Shiva%20Vasantha%20Mahal!5e0!3m2!1sen!2sin!4v1778420749700!5m2!1sen!2sin" title="Narasu's Shiva Vasantha Mahal map" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell countdown">
+      <div class="frame reveal" style="padding:1.45rem;">
+        <p class="eyebrow">Counting down</p>
+        <h2 class="title">Counting down to forever</h2>
+        <div class="timer">
+          <div class="time"><span id="days">00</span><small>Days</small></div>
+          <div class="time"><span id="hours">00</span><small>Hours</small></div>
+          <div class="time"><span id="minutes">00</span><small>Minutes</small></div>
+          <div class="time"><span id="seconds">00</span><small>Seconds</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="finale">
+      <div class="finale-inner reveal">
+        <img class="lamp" src="public/—Pngtree—ornate golden peacock kuthu vilakku_23215462.png" alt="">
+        <h2>We await your gracious presence</h2>
+        <p>This celebration is not complete without your blessings. Join us as two families gather under maroon silk, golden lamps, and sacred tradition.</p>
+        <div class="cta">
+          <a class="btn" href="#">RSVP</a>
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Narasu%27s%20Shiva%20Vasantha%20Mahal%2C%20Salem%2C%20Tamil%20Nadu">Navigate</a>
+          <a class="btn" href="#">Save the date</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <script>
+    // ---- Password gate ----
+    // Change PASSWORD below to whatever you want your guests to enter.
+    const PASSWORD = "1309";
+    const gate = document.getElementById('passwordGate');
+    const siteContent = document.getElementById('siteContent');
+    const gateForm = document.getElementById('gateForm');
+    const gateInput = document.getElementById('gateInput');
+    const gateError = document.getElementById('gateError');
+
+    gateForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (gateInput.value.trim() === PASSWORD) {
+        gate.style.display = 'none';
+        siteContent.style.display = '';
+        document.body.style.overflow = '';
+      } else {
+        gateError.textContent = 'That password isn\'t quite right — try again.';
+        gateInput.value = '';
+        gateInput.focus();
+      }
+    });
+
+    const root = document.documentElement;
+    const doorStage = document.getElementById('doorStage');
+    let doorProgress = 0;
+    let doorUnlocked = false;
+    let touchStartY = 0;
+
+    function setDoorProgress(value) {
+      doorProgress = Math.max(0, Math.min(1, value));
+      root.style.setProperty('--door-open', doorProgress.toFixed(4));
+      if (doorProgress >= 1) {
+        doorUnlocked = true;
+        doorStage.dataset.open = 'true';
+      }
+    }
+
+    function stageDoor() {
+      const rect = doorStage.getBoundingClientRect();
+      if (Math.abs(rect.top) < 1) return;
+      const previous = root.style.scrollBehavior;
+      root.style.scrollBehavior = 'auto';
+      window.scrollTo(0, window.scrollY + rect.top);
+      root.style.scrollBehavior = previous;
+    }
+
+    function isDoorZone() {
+      const rect = doorStage.getBoundingClientRect();
+      return !doorUnlocked && rect.top <= window.innerHeight * 0.34 && rect.bottom > window.innerHeight * 0.5;
+    }
+
+    function openDoorBy(delta) {
+      if (!isDoorZone()) return false;
+      if (delta < 0 && doorProgress <= 0) return false;
+      stageDoor();
+      setDoorProgress(doorProgress + delta / 1050);
+      return true;
+    }
+
+    window.addEventListener('wheel', (event) => {
+      const unit = event.deltaMode === 1 ? 18 : event.deltaMode === 2 ? window.innerHeight : 1;
+      if (openDoorBy(event.deltaY * unit)) event.preventDefault();
+    }, { passive: false });
+
+    window.addEventListener('touchstart', (event) => {
+      touchStartY = event.touches[0] ? event.touches[0].clientY : 0;
+    }, { passive: true });
+
+    window.addEventListener('touchmove', (event) => {
+      const currentY = event.touches[0] ? event.touches[0].clientY : touchStartY;
+      const delta = touchStartY - currentY;
+      if (openDoorBy(delta * 1.7)) event.preventDefault();
+      touchStartY = currentY;
+    }, { passive: false });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.16 });
+
+    document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+
+    const parallaxItems = Array.from(document.querySelectorAll('.parallax'));
+    let ticking = false;
+
+    function updateParallax() {
+      ticking = false;
+      const center = window.innerHeight / 2;
+      parallaxItems.forEach((item) => {
+        const rect = item.getBoundingClientRect();
+        const speed = Number(item.dataset.speed || 0.06);
+        const delta = rect.top + rect.height / 2 - center;
+        const offset = Math.max(-28, Math.min(28, delta * speed * -0.12));
+        item.style.setProperty('--parallax-y', offset.toFixed(2) + 'px');
+      });
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!doorUnlocked && isDoorZone()) stageDoor();
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(updateParallax);
+      }
+    }, { passive: true });
+
+    function pad(value) {
+      return String(value).padStart(2, '0');
+    }
+
+    const weddingDate = new Date('2026-09-13T07:00:00').getTime();
+    function updateCountdown() {
+      const distance = weddingDate - Date.now();
+      const safeDistance = Math.max(0, distance);
+      const days = Math.floor(safeDistance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((safeDistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((safeDistance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((safeDistance % (1000 * 60)) / 1000);
+
+      document.getElementById('days').textContent = pad(days);
+      document.getElementById('hours').textContent = pad(hours);
+      document.getElementById('minutes').textContent = pad(minutes);
+      document.getElementById('seconds').textContent = pad(seconds);
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    const petals = document.getElementById('petals');
+    const petalSeeds = [
+      [3, 11, -2.2, 1.4, 0.42, 0.55],
+      [7, 16, 2.8, -1.2, 0.64, 0.7],
+      [11, 13, -1.4, 2.5, 0.5, 0.62],
+      [15, 20, 3.2, 1.1, 0.72, 0.48],
+      [18, 14, -3.4, -0.8, 0.58, 0.58],
+      [22, 18, 1.7, 3.4, 0.46, 0.66],
+      [27, 12, -2.6, 0.9, 0.68, 0.5],
+      [31, 21, 3.8, -2.8, 0.52, 0.74],
+      [35, 15, -1.9, 2.1, 0.78, 0.56],
+      [39, 19, 2.4, 3.2, 0.6, 0.44],
+      [43, 13, -3.1, -1.8, 0.49, 0.64],
+      [47, 17, 1.2, 2.7, 0.74, 0.52],
+      [51, 22, -2.4, 1.6, 0.57, 0.7],
+      [55, 14, 3.5, -1.5, 0.66, 0.55],
+      [59, 18, -1.5, 3.1, 0.44, 0.66],
+      [63, 12, 2.1, 0.8, 0.7, 0.5],
+      [67, 20, -3.7, -2.3, 0.54, 0.72],
+      [71, 15, 1.8, 2.4, 0.62, 0.58],
+      [75, 19, -2.9, 1.1, 0.48, 0.64],
+      [79, 13, 3.1, -1.9, 0.76, 0.5],
+      [83, 17, -1.3, 2.8, 0.56, 0.68],
+      [87, 21, 2.7, 1.4, 0.69, 0.54],
+      [91, 14, -3.2, -0.7, 0.5, 0.62],
+      [95, 18, 1.5, 3.3, 0.73, 0.46],
+      [6, 24, -4.1, 2.2, 0.38, 0.78],
+      [24, 23, 4.3, -2.4, 0.82, 0.42],
+      [58, 25, -3.8, 2.9, 0.4, 0.76],
+      [76, 26, 4.6, -3.1, 0.86, 0.44]
+    ];
+
+    petalSeeds.forEach((seed, index) => {
+      const [left, duration, drift, midDrift, size, opacity] = seed;
+      const petal = document.createElement('span');
+      petal.className = 'petal';
+      for (let petalIndex = 0; petalIndex < 6; petalIndex += 1) {
+        petal.appendChild(document.createElement('i'));
+      }
+      petal.appendChild(document.createElement('b'));
+      petal.style.left = left + '%';
+      petal.style.setProperty('--petal-duration', duration + 's');
+      petal.style.setProperty('--petal-delay', (index * -0.73) + 's');
+      petal.style.setProperty('--petal-size', size + 'rem');
+      petal.style.setProperty('--petal-opacity', opacity);
+      petal.style.setProperty('--petal-drift', drift + 'rem');
+      petal.style.setProperty('--petal-drift-mid', midDrift + 'rem');
+      petal.style.setProperty('--petal-rotate', ((index * 37) % 180) + 'deg');
+      petals.appendChild(petal);
+    });
+
+    setDoorProgress(0);
+    updateParallax();
+  </script>
+</body>
+</html>
