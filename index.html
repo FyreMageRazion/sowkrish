@@ -469,13 +469,16 @@
     .gallery-grid {
       display: grid;
       gap: 1rem;
-      width: min(100%, 36rem);
+      width: min(100%, 44rem);
       margin-inline: auto;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-auto-flow: dense;
+      align-items: start;
     }
 
     .photo-card {
       position: relative;
-      min-height: 22rem;
+      min-height: 16rem;
       overflow: hidden;
       border: 0.55rem solid rgba(255, 241, 207, 0.64);
       border-radius: 1rem;
@@ -484,7 +487,12 @@
       transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
     }
 
-    .photo-card:nth-child(even) {
+    .photo-card:nth-child(3n) {
+      min-height: 19rem;
+      grid-column: span 2;
+    }
+
+    .photo-card:nth-child(5n) {
       min-height: 18rem;
     }
 
